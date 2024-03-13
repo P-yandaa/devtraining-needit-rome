@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="ca4ecc5f93b00210775871218bba1083" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="New field 3" max_length="15" name="u_new_field_3" type="decimal"/>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requedted_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="法的" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="人事" language="ja" sequence="0" value="時間"/>
+                <element inactive_on_update="false" label="施設" language="ja" sequence="1" value="設備"/>
+                <element inactive_on_update="false" label="法的" language="ja" sequence="2" value="法的"/>
+                <element inactive_on_update="false" label="あなたの部門の選択" language="ja" sequence="3" value="your_choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="リーガル１" label="必要なもの" mandatory="true" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="人事１" language="ja" sequence="0" value="人事１"/>
+                <element inactive_on_update="false" label="人事 2" language="ja" sequence="1" value="人事 2"/>
+                <element inactive_on_update="false" label="施設１" language="ja" sequence="2" value="施設１"/>
+                <element inactive_on_update="false" label="施設２" language="ja" sequence="3" value="施設２"/>
+                <element inactive_on_update="false" label="リーガル１" language="ja" sequence="4" value="リーガル１"/>
+                <element inactive_on_update="false" label="リーガル２" language="ja" sequence="5" value="リーガル２"/>
+                <element inactive_on_update="false" label="あなたの部門の選択１" language="ja" sequence="6" value="あなたの部門の選択１"/>
+                <element inactive_on_update="false" label="あなたの部門の選択２" language="ja" sequence="7" value="あなたの部門の選択２"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>
